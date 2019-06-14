@@ -97,6 +97,20 @@ namespace TemplateItau.Controllers
             #endregion
             return View();
         }
+
+        public ActionResult Tabs()
+        {
+            if (!ValidaLogin()) return RedirectToAction("Login", "Autenticacao");
+            #region Breadcrumbs
+            var breadcrumbs = new List<KeyValuePair<string, string>>();
+            breadcrumbs.Add(new KeyValuePair<string, string>("javascript: document.location.href =\"/\"", "Home"));
+            breadcrumbs.Add(new KeyValuePair<string, string>("javascript: void(0)", "Interface"));
+            breadcrumbs.Add(new KeyValuePair<string, string>("javascript: void(0)", "Tabs"));
+
+            ViewBag.Breadcrumbs = breadcrumbs;
+            #endregion
+            return View();
+        }
         #endregion
 
         #region forms
@@ -172,6 +186,7 @@ namespace TemplateItau.Controllers
             #endregion
             return View();
         }
+
         #endregion
 
         #region Tables

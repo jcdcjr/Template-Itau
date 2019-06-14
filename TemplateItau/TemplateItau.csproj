@@ -1923,6 +1923,7 @@
     <Content Include="Views\Exemplo\StepForms.cshtml" />
     <Content Include="Views\Exemplo\UploadForms.cshtml" />
     <Content Include="Views\Exemplo\DataTable.cshtml" />
+    <Content Include="Views\Exemplo\Tabs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
